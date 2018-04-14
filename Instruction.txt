@@ -1,0 +1,17 @@
+THE PROJECT USES MYSQL AS THE BACKEND DATABASE. YOU NEED TO HAVE THE APPROPRIATE DATABASE STRUCTURE AN NAME FOR PROPER WORKING OF THE PROJECT!
+
+STEPS :
+
+1. Make sure mysql is installed. Open it.
+ -> sudo apt-get install openjdk-8-jdk
+ -> sudo apt-get install mysql-server mysql-client libmysql-java
+ 
+2. Open mysql and create database bankdata
+3. Import the given sql file. Type in terminal
+ -> mysql -u <username> -p bankdata < database.sql
+
+4. Import project and open file code.java
+5. In the method getConnection() of connectivity class defined in code.java, change the following:
+ (a) String password = "amit"; - Replace amit by your mysql password
+ (b) String user = "root"; - Replace root by your mysql username
+
